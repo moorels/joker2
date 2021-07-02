@@ -1,4 +1,4 @@
-import React,{useState, useRef} from 'react'
+import React from 'react'
 import './App.css';
 import useRandomJoke from './useRandomJoke';
 
@@ -6,14 +6,12 @@ function App() {
 
 
 
-const joke = useRandomJoke()
-
-
-
-
-
+ const kk =useRandomJoke()
 
   return (
+
+
+
     
     <div className="App">
       <center>
@@ -21,13 +19,13 @@ const joke = useRandomJoke()
         
 <form>
   
-  <button style ={{color:"red" , fontSize: "30px"}} onClick={joke}>JOKEBOOK</button>
+  <button style ={{color:"red" , fontSize: "30px"}} >JOKEBOOK</button>
   
 </form>
 
 
       
-        <h2>{joke}</h2>
+        <h2>{kk}</h2>
       </center>
     </div>
   );
